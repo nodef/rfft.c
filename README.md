@@ -1,8 +1,21 @@
 # rfft.h
 Public domain single header fast Fourier transform for arbitrary array sizes,
 in about 100 lines of C code, which should be straightforward to understand.
+By [Grego](https://github.com/grego).
 
 A C++ implementation using the stdlib `complex` and `vector` is also provided in `rfft.hpp`.
+
+## Installation
+
+Run:
+```bash
+$ npm i rfft.c
+```
+
+And then include `rfft.h` as follows:
+```c
+#include "node_modules/rfft.c/rfft.h"  // or #include "rfft.hpp" for C++
+```
 
 ## Algorithms
 The classic [Cooley-Turkey algorithm](https://en.wikipedia.org/wiki/Cooley%E2%80%93Tukey_FFT_algorithm)
@@ -23,3 +36,10 @@ but written in a simpler and arguably more straightforward way.
 
 ## License
 Public domain.
+
+<br>
+<br>
+
+
+[![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/rfft.c)
