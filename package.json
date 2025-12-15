@@ -1,0 +1,28 @@
+{
+  "name": "rfft.c",
+  "version": "1.2023.2",
+  "description": "Reasonably fast Fourier transform in a single header for C and C++; grego (2023).",
+  "keywords": [
+    "c",
+    "library",
+    "fft",
+    "fourier",
+    "transform",
+    "signal",
+    "processing"
+  ],
+  "homepage": "https://github.com/nodef/rfft.c#readme",
+  "bugs": {
+    "url": "https://github.com/nodef/rfft.c/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodef/rfft.c.git"
+  },
+  "license": "CC0-1.0",
+  "author": "wolfram77@gmail.com",
+  "main": "rfft.h",
+  "scripts": {
+    "test": "bash build.sh test"
+  }
+}
