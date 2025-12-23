@@ -20,6 +20,7 @@ And then include `rfft.h` or `rfft.hpp` as follows:
 
 ```cxx
 // main.c or main.cxx
+#define RFFT_IMPLEMENTATION
 #include "node_modules/rfft.c/rfft.h"   // if using C, or
 #include "node_modules/rfft.c/rfft.hpp" // if using C++
 
@@ -37,6 +38,7 @@ You may also use a simpler approach:
 
 ```cxx
 // main.c or main.cxx
+#define RFFT_IMPLEMENTATION
 #include <rfft.h>   // if using C, or
 #include <rfft.hpp> // if using C++
 
