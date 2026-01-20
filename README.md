@@ -21,35 +21,24 @@ And then include `rfft.h` or `rfft.hpp` as follows:
 ```cxx
 // main.c or main.cxx
 #define RFFT_IMPLEMENTATION
-#include "node_modules/rfft.c/rfft.h"   // if using C, or
-#include "node_modules/rfft.c/rfft.hpp" // if using C++
-
-int main() { /* ... */ }
-```
-
-And then compile with `gcc` or `g++` as usual.
-
-```bash
-$ gcc main.c    # if using C, or
-$ g++ main.cxx  # if using C++
-```
-
-You may also use a simpler approach:
-
-```cxx
-// main.c or main.cxx
-#define RFFT_IMPLEMENTATION
 #include <rfft.h>   // if using C, or
 #include <rfft.hpp> // if using C++
 
 int main() { /* ... */ }
 ```
 
-If you add the path `node_modules/rfft.c` to your compiler's include paths.
+Finally, compile while adding the path `node_modules/rfft.c` to your compiler's include paths.
 
 ```bash
 $ gcc -I./node_modules/rfft.c main.c    # if using C, or
 $ g++ -I./node_modules/rfft.c main.cxx  # if using C++
+```
+
+You may also use a simpler approach with the [cpoach](https://www.npmjs.com/package/cpoach.sh) tool, which automatically adds the necessary include paths of all the installed dependencies for your project.
+
+```bash
+$ cpoach gcc main.c    # if using C, or
+$ cpoach g++ main.cxx  # if using C++
 ```
 
 <br>
@@ -85,6 +74,7 @@ Public domain.
 <br>
 
 
+[![](https://raw.githubusercontent.com/qb40/designs/gh-pages/0/image/11.png)](https://wolfram77.github.io)<br>
 [![SRC](https://img.shields.io/badge/src-repo-green?logo=Org)](https://github.com/grego/rfft.h)
 [![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
 ![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/rfft.c)
